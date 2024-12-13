@@ -1,0 +1,230 @@
+
+:root {
+    --text-color: #fff;
+    --bg-color: #1b1f24;
+    --second-bg-color: #22282f;
+    --main-color: #20C863;
+    --other-color: #c3cad5;
+
+    --h1-font: 4.5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1rem;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    height: 101vh;;
+    background: #1A232C;
+    color: white;
+}
+
+.wrapper {
+    padding-top: 59px;
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper h1 {
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    color: #20C863;
+}
+
+.wrapper p {
+    color: #6c757d;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card {
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1b1f24;
+    margin: 10px 4px;
+    border: 1px solid #20C863;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card i {
+    margin: 20px;
+    color: #20C863;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.card p {
+    color: #6c757d;
+}
+
+.card:hover i,
+.card:hover p {
+    color: #fff;
+}
+
+.card:hover h2 {
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
+.card:nth-child(1):hover {
+    background: linear-gradient(45deg, #20c86345 0%, #20c86345 100%), url(../images/marketplace.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(2):hover {
+    background: linear-gradient(45deg, #20c86345 0%, #20c86345 100%), url(../images/webdesign.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(3):hover {
+    background: linear-gradient(45deg, #20c86345 0%, #20c86345 100%), url(../images/CALL-CENTER-SERVICES.webp);
+    background-size: cover;
+}
+
+.card:nth-child(4):hover {
+    background: linear-gradient(45deg, #20c86345 0%, #20c86345 100%), url(../images/smm.webp);
+    background-size: cover;
+}
+
+.card:nth-child(5):hover {
+    background: linear-gradient(45deg, #20c86345 0%, #20c86345 100%), url(../images/corporate-governance.webp);
+    background-size: cover;
+}
+
+.card:nth-child(6):hover {
+    background: linear-gradient(45deg, #20c86345 0%, #20c86345 100%), url(../images/creative.jpg);
+    background-size: cover;
+}
+
+.card:hover {
+    border: 1px solid white;
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 5px #20C863;
+}
+
+
+
+.box {
+    padding: 80px;
+    background: #2d343f;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.box img {
+    margin-bottom: 20px;
+    height: 80px;
+    width: 80px;
+}
+
+.box h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--other-color);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.box a {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 1.273em;
+    font-weight: 700;
+    padding: 7px 0;
+    color: var(--text-color);
+    border-bottom: 2px solid #5d6c83;
+    transition: all .50s ease;
+}
+
+.box i {
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--main-color);
+    margin-left: 5px;
+}
+
+.box a:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px) {
+    .wrapper {
+        padding: 25px;
+    }
+
+    .wrapper h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .content-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    card {
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper {
+      width: 100%;
+      box-sizing: border-box;
+      height: 100vh; /* Optional: Fill screen height */
+    }
+  
+    .wrapper > * { /* Target all direct children of .wrapper */
+      width: auto;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }

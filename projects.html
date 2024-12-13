@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAMIN | Projects</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="service.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link active">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="best-selling-products-section">
+        <h1 class="section-title">Best Sold & <span>Rated Website</span></h1>
+        <div class="product-container">
+
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="images/full image/1.png" class="product-img" onclick="openGallery('fullscreenContainer1')">
+                <div id="fullscreenContainer1" class="fullscreen-container c1">
+                    <button id="closeButton" onclick="closeGallery('fullscreenContainer1')">Close</button>
+                    <img src="images/full image/unigine.png" alt="E-Commerce Image">
+                </div>
+            </div>
+
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="images/full image/2.png" class="product-img" onclick="openGallery('fullscreenContainer2')">
+                <div id="fullscreenContainer2" class="fullscreen-container c2">
+                    <button id="closeButton" onclick="closeGallery('fullscreenContainer2')">Close</button>
+                    <img src="images/full image/ecommerce.png">
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="images/full image/3.png" class="product-img" onclick="openGallery('fullscreenContainer3')">
+                <div id="fullscreenContainer3" class="fullscreen-container c3">
+                    <button id="closeButton" onclick="closeGallery('fullscreenContainer3')">Close</button>
+                    <img src="images/full image/blog.png">
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="images/full image/4.png" class="product-img" onclick="openGallery('fullscreenContainer4')">
+                <div id="fullscreenContainer4" class="fullscreen-container c4">
+                    <button id="closeButton" onclick="closeGallery('fullscreenContainer4')">Close</button>
+                    <img src="images/full image/lms.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-selling-products-section">
+        <h1 class="section-title">Graphics <span>Designs</span></h1>
+        <div class="product-container">
+            <div id="fullscreen-modal">
+                <span class="close" onclick="closeFullscreen()">&times;</span>
+                <img id="fullscreen-image" src="" alt="Fullscreen Image">
+              </div>
+            <div class="product-card">
+                <img src="images/graph1.jpg" class="product-img" onclick="openFullscreen(this)">
+            </div>
+            <div class="product-card">
+                <img src="images/graph2.jpg" class="product-img" onclick="openFullscreen(this)">
+            </div>
+            <div class="product-card">
+                <img src="images/graph3.jpg" class="product-img" onclick="openFullscreen(this)">
+            </div>
+            <div class="product-card">
+                <img src="images/graph4.webp" class="product-img" onclick="openFullscreen(this)">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="review-section">
+        <h1 class="section-title">What Our <span>Customers</span> Say About Us</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/neha.jpg" style="border-radius: 100px;"></div>
+                <h2 class="review-title">Best Website Designer</h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere, dolores est quia
+                    rerum eos. Ab doloremque incidunt nemo harum?</p>
+            </div>
+
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/sajid.jpg" style="border-radius: 100px;"></div>
+                <h2 class="review-title">Best Website Designer</h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere, dolores est quia
+                    rerum eos. Ab doloremque incidunt nemo harum?</p>
+            </div>
+
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/jabir.jpg" style="border-radius: 100px;"></div>
+                <h2 class="review-title">Best Website Designer</h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere, dolores est quia
+                    rerum eos. Ab doloremque incidunt nemo harum?</p>
+            </div>
+
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/fuad.jpg" style="border-radius: 100px;"></div>
+                <h2 class="review-title">Best Website Designer</h2>
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere, dolores est quia
+                    rerum eos. Ab doloremque incidunt nemo harum?</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        Made by alamin talukder
+    </footer>
+
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+    <script>
+        const header = $0;
+        const computedStyles = window.getComputedStyle(header);
+        const parentComputedStyles = window.getComputedStyle(header.parentElement);
+
+        const data = {
+            headerStyles: {
+                position: computedStyles['position'],
+                top: computedStyles['top'],
+                left: computedStyles['left'],
+                right: computedStyles['right'],
+                bottom: computedStyles['bottom'],
+                zIndex: computedStyles['z-index'],
+            },
+            parentStyles: {
+                position: parentComputedStyles['position'],
+            },
+        };
+    </script>
+    <script>
+        function openGallery(containerId) {
+            const fullscreenContainer = document.getElementById(containerId);
+            if (fullscreenContainer) {
+                fullscreenContainer.style.display = 'block';
+            }
+        }
+
+        function closeGallery(containerId) {
+            const fullscreenContainer = document.getElementById(containerId);
+            if (fullscreenContainer) {
+                fullscreenContainer.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        // Open the fullscreen modal and display the clicked image
+        function openFullscreen(img) {
+          const modal = document.getElementById('fullscreen-modal');
+          const fullscreenImage = document.getElementById('fullscreen-image');
+          fullscreenImage.src = img.src;
+          modal.style.display = 'flex';
+        }
+    
+        // Close the fullscreen modal
+        function closeFullscreen() {
+          const modal = document.getElementById('fullscreen-modal');
+          modal.style.display = 'none';
+        }
+      </script>
+
+</body>
+
+</html>
